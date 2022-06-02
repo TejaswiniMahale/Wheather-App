@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Get Live Weather</title>
+  </head>
+  <body>
+    <div class="sarch" id="searchDiv">
+      <form autocomplete="off" id="searchDiv">
+        <input
+          autocomplete="false"
+          name="hidden"
+          type="text"
+          style="display: none"
+        />
+        <input type="search" id="searchData" placeholder="Search city ..." />
+        <button class="btn" id="search"type="submit"">Search</button>
+      </form>
+    </div>
+   
+    <div class="container">
+      <div class="current-info">
+        <div class="date-container">
+          <div class="time" id="time">00:00 <span id="am-pm"></span></div>
+          <div class="date" id="date"></div>
+          <div class="others" id="current-weather-items">
+            <div class="weather-items">
+              <div class="weather-item">
+                <div>Humidity</div>
+                <div></div>
+              </div>
+              <div class="weather-item">
+                <div>Pressure</div>
+                <div></div>
+              </div>
+              <div class="weather-item">
+                <div>Wind Speed</div>
+                <div></div>
+              </div>
+              <div class="weather-item">
+                <div>Sunrise</div>
+                <div></div>
+              </div>
+              <div class="weather-item">
+                <div>Sunset</div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div id="space-map">
+          <div class="place-container">
+            <div class="time-zone" id="time-zone">Asia/</div>
+            <div class="country" id="country">IN</div>
+          </div>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                width="500"
+                height="300"
+                id="iframe"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     
+    <div class="future-forecast">
+      <div class="today" id="current-temp">
+        <!-- <img src="" alt="weather icon" class="w-icon" />
+        <div class="others">
+          <div class="day"></div>
+          <div class="temp">Night - &#176;C</div>
+          <div class="temp">Day - &#176;C</div>
+        </div> -->
+      </div>
+
+      <div class="weather-forecast" id="weather-forecast">
+        <!-- <div class="weather-forecast-item">
+          <div class="day"></div>
+          <img src="" alt="weather icon" class="w-icon" />
+          <div class="temp">Night - &#176;C</div>
+          <div class="temp">Day - &#176;C</div>
+        </div>
+        <div class="weather-forecast-item">
+          <div class="day"</div>
+          <img src="" alt="weather icon" class="w-icon" />
+          <div class="temp">Night - &#176;C</div>
+          <div class="temp">Day - &#176;C</div>
+        </div>
+        <div class="weather-forecast-item">
+          <div class="day"></div>
+          <img src="" alt="weather icon" class="w-icon" />
+          <div class="temp">Night - &#176;C</div>
+          <div class="temp">Day - &#176;C</div>
+        </div>
+        <div class="weather-forecast-item">
+          <div class="day"></div>
+          <img src="" alt="weather icon" class="w-icon" />
+          <div class="temp">Night - &#176;C</div>
+          <div class="temp">Day - &#176;C</div>
+        </div>
+        <div class="weather-forecast-item">
+          <div class="day"></div>
+          <img src="" alt="weather icon" class="w-icon" />
+          <div class="temp">Night - &#176;C</div>
+          <div class="temp">Day - &#176;C</div>
+        </div> -->
+      </div>
+    </div>
+  </body>
+<script src="app.js"></script>
+</html>
+<script
+
+  src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+  integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
